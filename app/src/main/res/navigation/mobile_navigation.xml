@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/destination_auth">
+    <fragment
+        android:id="@+id/destination_ecopontos_fragment"
+        android:name="br.edu.ufabc.ecofinder.view.EcopontosFragment"
+        android:label="Ecopontos List">
+        <action
+            android:id="@+id/showEcopontoDetails"
+            app:destination="@id/destination_ecopontos_item_fragment" />
+        <action
+            android:id="@+id/showEcopontosHimself"
+            app:destination="@id/destination_ecopontos_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_ecopontos_item_fragment"
+        android:name="br.edu.ufabc.ecofinder.view.EcopontoItemFragment">
+        <argument
+            android:name="ecopontoId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_auth"
+        android:name="br.edu.ufabc.ecofinder.view.AuthFragment"
+        android:label="@string/app_name" >
+        <action
+            android:id="@+id/show_list"
+            app:destination="@id/destination_ecopontos_fragment" />
+    </fragment>
+</navigation>

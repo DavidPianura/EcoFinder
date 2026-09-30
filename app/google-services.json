@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "225053095814",
+    "project_id": "ecofinder-a5e33",
+    "storage_bucket": "ecofinder-a5e33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225053095814:android:72fedb7391a07e8c2e1e07",
+        "android_client_info": {
+          "package_name": "br.edu.ufabc.ecofinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225053095814-bf77ik9902hsmdiuspjfdhsb4roe323j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.ufabc.ecofinder",
+            "certificate_hash": "c955544392858160bfdbd38fe798879342674952"
+          }
+        },
+        {
+          "client_id": "225053095814-u18miq425bhiegoe0aovjb8j2fk4q1dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9TzJrQ84ZTti0oGwgNPdAc5EuW1ia2vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225053095814-u18miq425bhiegoe0aovjb8j2fk4q1dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/OliveDrab"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/textViewFavoriteEcopontosTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/favorite_ecopontos_title"
+
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/textViewFavoriteEcopontosTitle"
+            app:layout_constraintBottom_toBottomOf="@id/textViewFavoriteEcopontosTitle"
+            app:layout_constraintStart_toEndOf="@id/textViewFavoriteEcopontosTitle"
+            android:src="@drawable/star_icon"
+            app:tint="@color/White"
+
+            android:contentDescription="@string/star_icon_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/aqui_ter_uma_recyclerview_com_os_ecopontos_favoritos"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

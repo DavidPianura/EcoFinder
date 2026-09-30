@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/OliveDrab"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewProfileScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="PERFIL"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/textViewProfileScreenTitle"
+            app:layout_constraintBottom_toBottomOf="@id/textViewProfileScreenTitle"
+            app:layout_constraintStart_toEndOf="@id/textViewProfileScreenTitle"
+            android:src="@drawable/baseline_person_24"
+            app:tint="@color/White"
+
+            android:contentDescription="@string/star_icon_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewUserImageProfile"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/sample_user_photo"
+        app:shapeAppearanceOverlay="@style/circular"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/TextViewUserNameProfileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name_default"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/OliveDrab"
+            />
+
+        <TextView
+            android:id="@+id/TextViewUserNameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name_default"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/TextViewUserEmailProfileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_label"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/OliveDrab"
+
+            />
+
+        <TextView
+            android:id="@+id/TextViewUserEmailProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_email_default"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TextViewUserAddressProfileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_label"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/OliveDrab"
+            />
+
+        <TextView
+            android:id="@+id/TextViewUserAddressProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_address"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

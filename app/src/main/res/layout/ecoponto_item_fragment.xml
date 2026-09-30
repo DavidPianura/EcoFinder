@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/ScrollViewEcopontoItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextViewEcopontoItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ImageViewButtonFavorites"
+                android:text="@string/ecoponto_item_title_default"
+                android:textStyle="bold"
+                android:textColor="@color/OliveDrab"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/ImageViewButtonFavorites"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/star_icon"
+                android:contentDescription="@string/button_add_to_favorite_description"
+                app:layout_constraintBottom_toBottomOf="@id/TextViewEcopontoItemTitle"
+                app:layout_constraintStart_toEndOf="@id/TextViewEcopontoItemTitle"
+                app:layout_constraintTop_toTopOf="@id/TextViewEcopontoItemTitle"
+                app:tint="@color/DarkGray"
+                />
+
+            <ImageView
+                android:id="@+id/ImageViewLocationEcopontoItem"
+                android:src="@drawable/baseline_location_on_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextViewEcopontoItemTitle"
+                app:tint="@color/Red"
+                android:layout_marginVertical="20dp"
+                android:contentDescription="@string/location_icon_description" />
+
+            <TextView
+                android:id="@+id/TextViewEcopontoAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/ImageViewLocationEcopontoItem"
+                app:layout_constraintTop_toTopOf="@id/ImageViewLocationEcopontoItem"
+                app:layout_constraintBottom_toBottomOf="@id/ImageViewLocationEcopontoItem"
+                android:text="@string/ecoponto_location_default"
+                android:textSize="12sp"
+                android:clickable="true"
+                />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHorarioDeFuncionamento"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ImageViewLocationEcopontoItem"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/TextViewEcopontoHorariodeFuncionamentoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/horario_de_funcionamento_label"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/OliveDrab"
+                    />
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:id="@+id/TextViewEcopontoHorariodeFuncionamentoTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hoario_de_funcionamento_default"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/TextViewEcopontosINFO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ecoponto_info_default"
+                    />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

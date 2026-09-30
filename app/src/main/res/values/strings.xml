@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">EcoFinder</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="login_user_email">E-mail</string>
+    <string name="login_user_password">Senha</string>
+    <string name="login_button_text">Entrar</string>
+    <string name="login_screen_welcome_text">Bem-vindo ao\nEcoFinder!</string>
+    <string name="login_screen_forgot_password_text">Esqueceu sua senha?</string>
+    <string name="login_screen_dont_have_an_account_text">Não tem uma conta?</string>
+    <string name="login_screen_sign_up_text">Cadastre-se</string>
+    <string name="signup_screen_title">CADASTRO</string>
+    <string name="user_name_text">Nome Completo</string>
+    <string name="type_password_again_text">Repita sua senha</string>
+    <string name="sined_up_text">Cadastrar</string>
+    <string name="bottom_nav_home">Ecopontos</string>
+    <string name="bottom_nav_profile">Perfil</string>
+    <string name="EditTextFindText">Escreva um endereço</string>
+    <string name="TextViewFindEcoPontoTitleText">Encontre seu EcoPonto</string>
+    <string name="switchUseLocationText">Usar Localização do Dispositivo</string>
+    <string name="ecoponto_name_default_text">Ecoponto Name</string>
+    <string name="ecoponto_description_default_text">Ecoponto description</string>
+    <string name="ecoponto_location_default_text">Ecoponto location</string>
+    <string name="star_icon_description">Star Icon</string>
+    <string name="ecoponto_item_title_default">ECOPONTO TITLE</string>
+    <string name="horario_de_funcionamento_label">Horario de Funcionamento:</string>
+    <string name="hoario_de_funcionamento_default">Horario</string>
+    <string name="o_que_eh_aceito_label">O que é aceito:</string>
+    <string name="no_info_default">Sem Informações</string>
+    <string name="o_que_nao_eh_aceito_label">O que não é aceito:</string>
+    <string name="account_setting_title">Configurações de Conta</string>
+    <string name="button_add_to_favorite_description">Button used to add an Ecoponto to favorites</string>
+    <string name="location_icon_description">Location Icon</string>
+    <string name="ecoponto_location_default">Endereço do Ecoponto</string>
+    <string name="user_name_default">Nome do usuário</string>
+    <string name="user_email_default">useremail@email.com</string>
+    <string name="user_image_description">User Image</string>
+    <string name="user_address_default">Cadastre um endereço em seu perfil</string>
+    <string name="drawer_ecopontos_title">Ecopontos</string>
+    <string name="drawer_favorites_title">Meus Favoritos</string>
+    <string name="drawer_profile_title">Meu Perfil</string>
+    <string name="favorite_ecopontos_title">Meus Ecopontos Favoritos</string>
+    <string name="aqui_ter_uma_recyclerview_com_os_ecopontos">Aqui terá uma RecyclerView com os Ecopontos</string>
+    <string name="aqui_ter_uma_recyclerview_com_os_ecopontos_favoritos">Aqui terá uma RecyclerView com os Ecopontos Favoritos</string>
+    <string name="email_label">E-mail</string>
+    <string name="address_label">Endereço</string>
+    <string name="no_address">-</string>
+    <string name="ecoponto_info_default">Informações do Ecoponto</string>
+
+    <string-array name="spinner_array">
+        <item>Todos os Ecopontos</item>
+        <item>Meus Ecopontos Favoritos</item>
+    </string-array>
+</resources>
